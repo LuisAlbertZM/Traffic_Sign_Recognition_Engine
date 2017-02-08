@@ -1,0 +1,5 @@
+cmake_minimum_required(VERSION 2.8)
+project( trafficSignsDetection )
+find_package( OpenCV REQUIRED )
+add_executable( trafficSignsDetection trafficSignsDetection.cpp )
+target_link_libraries( trafficSignsDetection ${OpenCV_LIBS} )
